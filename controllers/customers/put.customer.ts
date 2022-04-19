@@ -1,6 +1,6 @@
 
 import { Request, Response } from "express";
-import { Customer } from "../../models/customer";
+import { Customer } from "../../models/model.customer";
 import { validateCustomers } from "./validate.customer";
 
 export const putCustomer = async (req: Request, res: Response) => {

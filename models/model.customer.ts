@@ -1,6 +1,6 @@
-import { model, Schema, Document } from 'mongoose';
+import { model, Schema, Document, ObjectId } from 'mongoose';
 
-interface ICustomer extends Document {
+interface ICustomer extends Document<ObjectId> {
     name: string;
     isVip: boolean,
     number: string;

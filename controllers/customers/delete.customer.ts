@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Customer } from "../../models/customer";
+import { Customer } from "../../models/model.customer";
 
 
 export const delCustomer = async (req: Request, res: Response) => {

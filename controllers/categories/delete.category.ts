@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Category } from '../../models/category';
+import { Category } from '../../models/model.category';
 
 export const delCategory = async (req: Request, res: Response) => {
     const category = await Category.findOne({ id: parseInt(req.params.id) })

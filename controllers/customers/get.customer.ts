@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Customer } from '../../models/customer';
+import { Customer } from '../../models/model.customer';
 
 export const getCustomer = async (req: Request, res: Response) => {
     const customer = await Customer.findById(req.params.id)

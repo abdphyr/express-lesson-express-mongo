@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { validateCategories } from "./validator.category";
-import { Category } from '../../models/category';
+import { Category } from '../../models/model.category';
 
 
 export const putCategory = async (req: Request, res: Response) => {

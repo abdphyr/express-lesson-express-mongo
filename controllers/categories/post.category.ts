@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Category } from '../../models/category';
+import { Category } from '../../models/model.category';
 import { validateCategories } from "./validator.category";
 
 

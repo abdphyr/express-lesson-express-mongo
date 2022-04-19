@@ -1,6 +1,6 @@
-import { model, Schema, Document } from 'mongoose';
+import { model, Schema, Document, ObjectId } from 'mongoose';
 
-interface ICategory extends Document {
+interface ICategory extends Document<ObjectId> {
     id: number;
     name: string;
 }
