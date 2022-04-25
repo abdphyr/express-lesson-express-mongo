@@ -4,9 +4,10 @@ interface ICustomer extends Document<ObjectId> {
     name: string;
     isVip: boolean,
     number: string;
+    bonusPoints: number;
 }
 
-const customerSchema = new Schema<ICustomer>({
+export const customerSchema = new Schema<ICustomer>({
     name: {
         type: String,
         required: true,
@@ -22,6 +23,10 @@ const customerSchema = new Schema<ICustomer>({
         required:true,
         minlength:5,
         maxlength:50
+    },
+    bonusPoints: {
+        type: Number,
+        required: true
     }
 }, { collection: "customer" })
 

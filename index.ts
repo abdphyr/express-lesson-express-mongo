@@ -2,6 +2,7 @@ import express from 'express';
 import { categoryRouter } from './routes/categories';
 import { customerRouter } from './routes/customers';
 import { courseRouter } from './routes/courses';
+import { enrollmentRouter } from './routes/enrollments';
 import { Request, Response } from 'express';
 import { connectdb } from './db/db.config';
 import helmet from 'helmet';
@@ -16,6 +17,7 @@ app.use(helmet())
 app.use('/api/categories', categoryRouter)
 app.use('/api/customers', customerRouter)
 app.use('/api/courses', courseRouter)
+app.use('/api/enrollments', enrollmentRouter)
 
 app.get('/', (req: Request, res: Response) => {
     res.send("Bu data")
